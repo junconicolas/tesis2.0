@@ -3,9 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/signup.css" />
     <title>Signup</title>
   </head>
   <body>
+    <section>
+      <h2>Registrate</h2>
+      <form id="signupForm">
+        <label>Nombre</label>
+        <input type="text" placeholder="..." id="name" required autofocus />
+        <label>Apellido</label>
+        <input type="text" placeholder="..." id="apellido" required />
+        <label>Mail</label>
+        <input type="email" placeholder="..." id="email" required />
+        <label>Contraseña</label>
+        <input type="password" placeholder="..." id="password" required />
+        <p>Igrese su genero</p>
+        <label>Hombre</label><br />
+        <input type="radio" id="sexo" value="hombre" required />
+        <label>Mujer</label><br />
+        <input type="radio" id="sexo" value="mujer" required />
+        <label>Otro</label>
+        <input type="radio" id="sexo" value="otro" required />
+        <input type="submit" value="Registro" />
+      </form>
+      <p>Ya tienes una cuenta?<a href="login.html">Login</a></p>
+    </section>
     <script src="js/signup.js"></script>
   </body>
 </html>
