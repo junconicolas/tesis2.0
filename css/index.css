@@ -1,0 +1,71 @@
+:root {
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: rgb(136, 0, 0);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*inicio cabecera*/
+.cabecera {
+  background-color: rgb(157, 140, 15);
+  width: 100%;
+  height: 100px;
+  padding: 10px 10px;
+}
+.cabecera_link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 600;
+}
+.cabecera_img {
+  object-fit: cover;
+  height: 90%;
+  margin-right: 10px;
+}
+/*fin cabecera*/
+/*inicio navegacion*/
+.navegacion {
+  background-color: rgb(178, 164, 56);
+  width: 100%;
+  height: 40px;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+.navegacion a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(228, 228, 228);
+  padding: 15px 50px;
+}
+.navegacion a:hover {
+  color: white;
+  background-color: rgb(216, 200, 74);
+}
+/*fin navegacion*/
