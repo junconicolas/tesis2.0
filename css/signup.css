@@ -80,3 +80,94 @@ section p a {
   text-decoration: none;
   color: #003dff;
 }
+
+/*.*/
+/*.*/
+/*.*/
+/*.*/
+@media (max-width: 480px) {
+  :root {
+    --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+      "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+      "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+    --transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--font-mono);
+  }
+
+  section {
+    background-color: #d6d58e;
+    display: flex;
+    flex-direction: wrap;
+    height: 150vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  section h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0em;
+    font-size: 2.5em;
+  }
+
+  section form {
+    width: 100%;
+    height: 130vh;
+    background-color: #cccb89;
+    padding: 0em 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0, 0.1);
+  }
+
+  section form label {
+    width: 100%;
+    padding: 0.1em;
+    margin-top: 0.5em;
+  }
+
+  section form input {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border-radius: 9px;
+    border: none;
+    outline-color: #dbf227;
+    background-color: #fffec1;
+  }
+
+  section form input[type="submit"] {
+    margin-top: 1em;
+    background-color: #dbf227;
+    color: #77763f;
+    font-size: 1em;
+    font-family: var(--font-mono);
+    transition: var(--transition);
+  }
+
+  section form input[type="submit"]:active {
+    transform: scale(0.97);
+  }
+
+  section p {
+    margin-top: 1.5em;
+  }
+
+  section p a {
+    text-decoration: none;
+    color: #003dff;
+  }
+}
